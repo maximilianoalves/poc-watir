@@ -11,13 +11,9 @@ task :run_acceptance, :tags do |_, args|
   end
 
   Cucumber::Rake::Task.new(:run) do |t|
-    puts "#{tags} --guess #{set_reporting()}"
-    t.cucumber_opts = "#{tags} --guess #{set_reporting()}"
+    puts "#{tags} --guess"
+    t.cucumber_opts = "#{tags} --guess"
   end
 
   Rake::Task[:run].invoke
-end
-
-def set_reporting()
-  reporting = "--format AllureCucumber::Formatter --out allure-results/"
 end

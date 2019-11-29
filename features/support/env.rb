@@ -2,11 +2,8 @@ require 'watir'
 require 'cucumber'
 require "allure-cucumber"
 
-AllureCucumber.configure do |c|
-  c.output_dir = "./allure-results/"
-  c.clean_dir  = true
-end
-
+chromedriver_path = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"drivers","chromedriver")
+Selenium::WebDriver::Chrome.driver_path = chromedriver_path
 
 Before do
   @browser = Watir::Browser.new :chrome

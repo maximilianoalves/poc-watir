@@ -1,5 +1,6 @@
-gem 'watir'
+# frozen_string_literal: true
+source "https://rubygems.org"
+
 gem 'cucumber'
 gem 'rake'
-# gem deve ser instalada manualmente gem sintall allure-cucumber
-gem 'allure-cucumber'
+gem 'watir'
