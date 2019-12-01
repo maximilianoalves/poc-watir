@@ -1,4 +1,4 @@
-# Watir + cucumber para tester funcionais
+# Watir + cucumber para testes funcionais
 Projeto de exemplo para implementação de testes funcionais em um Chrome utilizando o framework  Watir.
 
 ## Ferramentas utilizadas:
