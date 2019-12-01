@@ -33,7 +33,22 @@ Projeto de exemplo para implementação de testes funcionais em um Chrome utiliz
  ┗ 📜Rakefile
 ```
 
-## Instalações e tutoriais
+## Tutorial, Instalação e execução
+
+#### **Ter previamente o ruby instalado em sua máquina**
+**Windows:** [Ruby Installer](https://rubyinstaller.org/  "Ruby Installer")
+**Unix Based:** ["Ruby for Unix Based"](https://www.ruby-lang.org/pt/documentation/installation/ "Ruby for Unix Based")
+
+#### Instalar o bundler
+`gem install bundler`
+
+#### Instalar as gems do projeto
+`bundle install`
+
+#### Chromedriver
+Se utiliza o SO Windows, atualizar o chromedriver na pasta `driver` para a sua plataforma: [Chromedriver](https://chromedriver.chromium.org/downloads "Chromedriver")
+
+#### Executar o projeto
+`rake run_acceptance`
 
 
-Em construção.
